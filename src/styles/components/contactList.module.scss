@@ -1,0 +1,19 @@
+.contactList {
+  width: 600px;
+  margin: 100px;
+}
+
+.addBtn {
+  margin-top: 20px;
+}
+
+.istItems{
+    flex-wrap: wrap;
+}
+
+.listItem {
+    align-items: center !important;
+    & h4 {
+        margin-top: 0px !important;
+    }
+}
