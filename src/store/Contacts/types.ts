@@ -1,13 +1,17 @@
-import { Status } from "../Users/types";
+import { Status } from "../UsersAuth/types";
 
-export type List = {
-    id: string;
-    name: string;
-    phone: string;
-  };
-  
-  export interface ContactState {
-    list: List[];
-    status: Status;
-    error: string | undefined;
-  }
+export type ListItem = {
+  id: string;
+  name: string;
+  phone: string;
+};
+
+export interface ContactState {
+  list: ListItem[];
+  status: Status;
+  error: string | undefined;
+}
+
+export type SearchType = {
+  search: string;
+};

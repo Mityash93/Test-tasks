@@ -3,9 +3,9 @@ import { Alert, Button, Form, Input, Typography } from "antd";
 import { FC } from "react";
 import { logIn } from "../store/Auth/authSlice";
 import { useAppDispatch, useAppSelector } from "../store/hooks";
-import { selectUser } from "../store/Users/selectors";
-import { Status } from "../store/Users/types";
-import { fetchUsers } from "../store/Users/userApi";
+import { selectUser } from "../store/UsersAuth/selectors";
+import { Status } from "../store/UsersAuth/types";
+import { fetchUsers } from "../store/UsersAuth/userApi";
 
 import s from "../styles/pages/login.module.scss";
 const { Title } = Typography;
