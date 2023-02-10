@@ -1,6 +1,7 @@
 import { PhoneOutlined, UserOutlined } from "@ant-design/icons";
 import { Alert, Button, Form, Input, Modal } from "antd";
 import { FC } from "react";
+
 import { fetchContactEdit } from "../store/Contacts/listApi";
 import { selectContact } from "../store/Contacts/selectors";
 import { ListItem } from "../store/Contacts/types";

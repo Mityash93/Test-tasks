@@ -5,6 +5,10 @@ import {
 } from "@ant-design/icons";
 import { Alert, Avatar, Button, List, Typography } from "antd";
 import { useEffect, useState } from "react";
+
+import { AddForm } from "./AddForm";
+import { EditForm } from "./EditForm";
+import { SearchForm } from "./SearchForm";
 import { fetchContactDelete, fetchContacts } from "../store/Contacts/listApi";
 import { selectContact } from "../store/Contacts/selectors";
 import { ListItem } from "../store/Contacts/types";
@@ -12,11 +16,6 @@ import { useAppDispatch, useAppSelector } from "../store/hooks";
 import { Status } from "../store/UsersAuth/types";
 
 import s from "../styles/pages/contactList.module.scss";
-import { AddForm } from "./AddForm";
-import { EditForm } from "./EditForm";
-
-import { SearchForm } from "./SearchForm";
-
 const { Title } = Typography;
 
 export const ContactsList = () => {

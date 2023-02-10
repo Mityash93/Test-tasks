@@ -67,6 +67,10 @@ export const contactSlice = createSlice({
           findedContactForEdit.name = action.payload.name;
           findedContactForEdit.phone = action.payload.phone;
         }
+      })
+      .addCase(fetchContactEdit.rejected, (state, action) => {
+        state.status = Status.ERROR;
+        state.error = action.error.message;
       });
   },
 });

@@ -1,6 +1,7 @@
 import { PhoneOutlined, UserOutlined } from "@ant-design/icons";
 import { Alert, Button, Form, Input, Modal } from "antd";
 import { FC } from "react";
+
 import { fetchContactAdd } from "../store/Contacts/listApi";
 import { selectContact } from "../store/Contacts/selectors";
 import { useAppDispatch, useAppSelector } from "../store/hooks";
@@ -16,7 +17,10 @@ type AddFormProps = {
   setVisibleAddForm: (value: boolean) => void;
 };
 
-export const AddForm: FC<AddFormProps> = ({ visibleAddForm, setVisibleAddForm }) => {
+export const AddForm: FC<AddFormProps> = ({
+  visibleAddForm,
+  setVisibleAddForm,
+}) => {
   const { status, error } = useAppSelector(selectContact);
   const dispatch = useAppDispatch();
 
